@@ -16,21 +16,21 @@ namespace DataImporter.Seeders
     {
         public static void SeedData(List<List<string>> data, string path)
         {
-            string fileName = Path.GetFileName(path).ToLower();
+            //string fileName = Path.GetFileName(path).ToLower();
 
-            if (fileName == "jobtitle.tsv")
-            {
-                var jobTitles = data[0];
-                JobTitleSeeder.SeedJobTitle(jobTitles);
-            }
-            if (fileName == "employees.tsv")
-            {
-                EmployeeSeeder.SeedEmployees(data);
-            }
-            if (fileName == "departments.tsv")
-            {
-                DepartmentSeeder.SeedDepartment(data);
-            }
+            //if (fileName == "jobtitle.tsv")
+            //{
+            //    var jobTitles = data[0];
+            //    JobTitleSeeder.SeedJobTitle(jobTitles);
+            //}
+            //if (fileName == "employees.tsv")
+            //{
+            //    EmployeeSeeder.SeedEmployees(data);
+            //}
+            //if (fileName == "departments.tsv")
+            //{
+            //    DepartmentSeeder.SeedDepartment(data);
+            //}
         }
     }
 }

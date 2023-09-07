@@ -10,7 +10,6 @@ namespace Models
     public class Department
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ID { get; set; }
 
         [AllowNull]

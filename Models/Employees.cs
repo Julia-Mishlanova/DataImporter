@@ -9,7 +9,6 @@ namespace Models
     public class Employees
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ID { get; set; }
 
         [AllowNull]
