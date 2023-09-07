@@ -1,4 +1,5 @@
 ﻿using DataAccess.Management;
+using DataImporter.Seeders;
 using System;
 using System.Drawing;
 
@@ -10,9 +11,16 @@ namespace DataImporter
         {
             var connectionString = ConnectionDB.ConnectionString();
 
+            if (args.Length == 0)
+            {
+                
+                return;
+            }
+
             foreach (string arg in args)
             {
                 var data = FileConverter.ConvertTSVFileToText(arg);
+                Seeder.SeedData(data, arg);
             }
         }
     }
