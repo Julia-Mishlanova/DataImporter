@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Management
 {
-    public class ApplicationContext : DbContext
+    public class ApplicationDbContext : DbContext
     {
         public DbSet<JobTitle> JobTitles { get; set; }
         public DbSet<Employees> Employees { get; set; }
@@ -16,12 +16,12 @@ namespace DataAccess.Management
 
         private readonly string _connectionString;
 
-        public ApplicationContext(string connectionString)
+        public ApplicationDbContext(string connectionString)
         {
             _connectionString = connectionString;
             if (Database.EnsureCreated())
             {
-                using (ApplicationContext db = new ApplicationContext(_connectionString))
+                using (ApplicationDbContext db = new ApplicationDbContext(_connectionString))
                 {
                     db.Department.Add(
                         new Department
