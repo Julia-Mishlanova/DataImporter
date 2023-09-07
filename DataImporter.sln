@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataImporter", "DataImporter\DataImporter.csproj", "{3A93466D-6156-4A8B-B891-B44A9EA8EE5E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataImporter", "DataImporter\DataImporter.csproj", "{3A93466D-6156-4A8B-B891-B44A9EA8EE5E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{215EEA0E-73AB-4CB2-BFED-BBCC5117CA89}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Models", "Models\Models.csproj", "{215EEA0E-73AB-4CB2-BFED-BBCC5117CA89}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{D7003C79-8209-4667-BCD5-E3943471A0C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccess", "DataAccess\DataAccess.csproj", "{D7003C79-8209-4667-BCD5-E3943471A0C9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

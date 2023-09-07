@@ -5,21 +5,23 @@ using System.Drawing;
 
 namespace DataImporter
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            var connectionString = ConnectionDB.ConnectionString();
+            //args = new string[] { "C:\\Users\\User\\Downloads\\jobtitle.tsv" };
+            using (ApplicationDbContext db = new ApplicationDbContext(ConnectionDB.ConnectionString())) { }
 
             if (args.Length == 0)
             {
-                
+                DatabaseConsoleManager.OutputCurrentDataStructure();
                 return;
             }
 
             foreach (string arg in args)
             {
                 var data = FileConverter.ConvertTSVFileToText(arg);
+
                 Seeder.SeedData(data, arg);
             }
         }
