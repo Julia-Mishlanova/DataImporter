@@ -6,15 +6,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp5.Seeders
+namespace DataImporter.Seeders
 {
     internal class DepartmentSeeder
     {
-        private static ApplicationDbContext _db;
-        public DepartmentSeeder()
-        {
-            _db = new ApplicationDbContext(ConnectionDB.ConnectionString());
-        }
+        private static ApplicationDbContext _db = new ApplicationDbContext(ConnectionDB.ConnectionString());
+        
         public static void SeedDepartment(List<List<string>> data)
         {
             var nameDepartments = data[0];

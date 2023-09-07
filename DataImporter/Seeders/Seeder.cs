@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace ConsoleApp5.Seeders
+namespace DataImporter.Seeders
 {
     internal class Seeder
     {
