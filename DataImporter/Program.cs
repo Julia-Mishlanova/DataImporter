@@ -13,11 +13,11 @@ namespace DataImporter
     {
         static void Main(string[] args)
         {
-            //args = new string[] { "C:\\Users\\User\\Downloads\\jobtitle.tsv" };
+            args = new string[] { "C:\\Users\\User\\Downloads\\jobtitle.tsv" };
 
             if (args.Length == 0)
             {
-                //DatabaseConsoleManager.OutputCurrentDataStructure();
+                DatabaseConsoleManager.OutputCurrentDataStructure();
                 return;
             }
 
@@ -25,7 +25,7 @@ namespace DataImporter
             {
                 var data = FileConverter.ConvertTSVFileToText(arg);
 
-                //Seeder.SeedData(data, arg);
+                Seeder.SeedData(data, arg);
             }
         }
     }

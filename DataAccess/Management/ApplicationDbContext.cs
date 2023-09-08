@@ -17,12 +17,22 @@ namespace DataAccess.Management
         {
             if (Database.EnsureCreated())
             {
-                
+                using (ApplicationDbContext db = new ApplicationDbContext())
+                {
+                    db.Departments.Add(
+                        new Department
+                        {
+                            ParentID = null,
+                            ID = 0,
+                            Name = "SystemDepartmentName"
+                        });
+                    db.SaveChanges();
+                }
             }
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Database=mynewdatabase3;Username=postgres;Password=1");
+            optionsBuilder.UseNpgsql(ConnectionDB.ConnectionString());
         }
     }
 }
