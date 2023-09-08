@@ -9,13 +9,6 @@ namespace DataImporter
 {
     internal class DatabaseConsoleManager
     {
-        private static string _connectionString;
-
-        public DatabaseConsoleManager()
-        {
-            _connectionString = ConnectionDB.ConnectionString();
-        }
-
         public static void OutputCurrentDataStructure()
         {
             int? id = 0;

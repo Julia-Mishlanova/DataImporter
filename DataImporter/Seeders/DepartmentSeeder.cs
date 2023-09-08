@@ -11,7 +11,6 @@ namespace DataImporter.Seeders
     internal class DepartmentSeeder
     {
         private static readonly ApplicationDbContext _db = new ApplicationDbContext();
-        
         public static void SeedDepartment(List<List<string>> data)
         {
             var nameDepartments = data[0];

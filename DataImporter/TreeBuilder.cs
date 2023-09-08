@@ -12,11 +12,6 @@ namespace DataImporter
 {
     internal class TreeBuilder
     {
-        private static string _connectionString;
-        public TreeBuilder()
-        {
-            _connectionString = ConnectionDB.ConnectionString();
-        }
         public static List<SimpleTreeNode<Department>> NestedDepartments()
         {
             var allDepart = new List<SimpleTreeNode<Department>>();
