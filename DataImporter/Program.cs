@@ -13,7 +13,7 @@ namespace DataImporter
     {
         static void Main(string[] args)
         {
-            args = new string[] { "C:\\Users\\User\\Downloads\\jobtitle.tsv" };
+            //args = new string[] { "C:\\Users\\User\\Downloads\\jobtitle.tsv" };
 
             if (args.Length == 0)
             {

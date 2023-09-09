@@ -51,7 +51,6 @@ namespace DataImporter.Seeders
                     department = _db.Departments.FirstOrDefault(u => u.ID == 1);
                 }
 
-
                 // update если имя сотрудника уже есть, а остальные поля пусты (при добавлении departments.tsv первым)
                 var entity = _db.Employees.FirstOrDefault(u => u.FullName == fullNames[i]);
                 if (entity != null)
